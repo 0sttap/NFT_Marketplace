@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-bg-hero {
+  background-color: #3c045c;
+  background-image: radial-gradient(
+      at 0% 0%,
+      rgb(34, 2, 92) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, rgb(66, 16, 16) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(99, 8, 40) 0, transparent 50%);
+}
+
+.gradient-bg-artworks {
+  background-color: #11024d;
+  background-image: radial-gradient(
+      at 0% 0%,
+      rgb(82, 3, 82) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 50%, rgb(17, 4, 82) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(46, 2, 71) 0, transparent 50%);
+}
+
+.gradient-bg-artworks-NFT {
+  background-color: #1b1a1d;
+  background-image: radial-gradient(
+      at 0% 0%,
+      rgb(135, 118, 155) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, rgb(87, 75, 117) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(145, 102, 116) 0, transparent 50%);
+}
+
+.gradient-bg-addNFT {
+  background-color: #1b1a1d;
+  background-image: radial-gradient(
+      at 0% 0%,
+      rgb(19, 18, 20) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, rgb(40, 34, 53) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(51, 38, 42) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0a1420;
+  background-image: radial-gradient(
+      at 0% 100%,
+      rgb(84, 3, 95) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#eee, rgb(68, 67, 67));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

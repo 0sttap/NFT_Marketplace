@@ -1,6 +1,4 @@
 import { createClient } from "urql";
-import { useEffect, useState } from "react";
-
 
 const APIURL = 'https://api.thegraph.com/subgraphs/name/ostapbobrys/patsomarketplace'
 
@@ -61,8 +59,6 @@ const fetchData = async () => {
     const response = await client.query(query).toPromise()
     console.log('Response: ', response)
  }
-
-
 
 export {
     fetchData

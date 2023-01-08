@@ -10,13 +10,18 @@ import UpdateNFT from './components/UpdateNFT'
 import Loading from './components/Loading'
 import Alert from './components/Alert'
 import { getAllNFTs, isWalletConncted } from './Blockchain.services'
+import { fetchData } from './Graph'
+
 
 const App = () => {
 
   useEffect(async () => {
     await isWalletConncted()
     await getAllNFTs()
-
+  }, [])
+  
+   useEffect(() => {
+    fetchData()
   }, [])
   
   return (
